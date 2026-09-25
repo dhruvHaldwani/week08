@@ -6,6 +6,7 @@ import {
   Container,
   TextField,
   Typography,
+  Box,
 } from "@mui/material";
 import { useState } from "react";
 import {
@@ -86,6 +87,13 @@ const Login = () => {
   };
 
   return (
+    <Box
+    sx={{
+      minHeight: "100vh",
+      backgroundColor: "#e8f5e9",
+      py: 4,
+    }}
+  >
     <Container maxWidth="sm">
       <Card sx={{ mt: 10 }}>
         <CardContent sx={{ p: 4 }}>
@@ -93,7 +101,7 @@ const Login = () => {
             variant="h4"
             gutterBottom
           >
-            KoalaTech University
+            KoalaTech University - Continuous Deployment
           </Typography>
 
           <Typography
@@ -152,6 +160,7 @@ const Login = () => {
         </CardContent>
       </Card>
     </Container>
+    </Box>
   );
 };
 
